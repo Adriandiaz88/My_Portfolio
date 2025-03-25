@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nombre del Proyecto 1] - [Tu Nombre]</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>[Nombre del Proyecto 1]</h1>
+        <p>Analista de Datos</p>
+    </header>
+
+    <section>
+        <h2>Descripción del Proyecto</h2>
+        <p>[Descripción detallada del proyecto.  El contexto, el problema que intentabas resolver, los objetivos del proyecto].</p>
+
+        <h2>Metodología</h2>
+        <p>[Describe los pasos que seguiste para completar el proyecto: Recopilación de datos, limpieza, análisis exploratorio, modelado, visualización, etc.].</p>
+
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>Tableau</li>
+            <li>SQL</li>
+        </ul>
+
+        <h2>Resultados</h2>
+        <p>[Presenta los resultados del proyecto.  Qué insights encontraste?  Qué conclusiones sacaste?  Muestra visualizaciones de datos si es posible].</p>
+
+        <img src="../img/project1.png" alt="Visualización de Datos" width="500">  <!-- Ejemplo de visualización -->
+
+        <h2>Enlace al Código</h2>
+        <p><a href="[Enlace al repositorio de GitHub del proyecto]">Ver el código en GitHub</a></p>
+
+        <h2>Volver al Portafolio</h2>
+        <p><a href="../index.html">Volver a la página principal</a></p>
+    </section>
+
+    <footer>
+        <p>© 2023 [Tu Nombre]</p>
+    </footer>
+</body>
+</html>
