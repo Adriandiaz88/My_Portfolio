@@ -3,43 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Nombre del Proyecto 1] - [Tu Nombre]</title>
+    <title>Retención usuarios gym</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <h1>[Nombre del Proyecto 1]</h1>
+        <h1>Retención Usuarios Gym</h1>
         <p>Analista de Datos</p>
     </header>
 
     <section>
-        <h2>Descripción del Proyecto</h2>
-        <p>[Descripción detallada del proyecto.  El contexto, el problema que intentabas resolver, los objetivos del proyecto].</p>
+        <h2>Descripción</h2>
+        <p>El objetivo de este proyecto es Retención de usuarios mediante el análisis de datos de visitas, cantidad de usuarios nuevos, usuarios viejos y usuarios que siguen en el sistema pero ya no visitan. El estudio busca comprender el comportamiento del usuario, identificar usuarios que ya no asisten al gimnasio * y generar ideas de como retener a los usuarios a través de sus acciones en el gym.</p>
 
         <h2>Metodología</h2>
-        <p>[Describe los pasos que seguiste para completar el proyecto: Recopilación de datos, limpieza, análisis exploratorio, modelado, visualización, etc.].</p>
+        <p> Lectura de datos y carga de librerias.
+Preprocesamiento de datos: Limpieza de datos (valores ausentes, duplicados, formatos de columnas, y tipos de datos adecuados).
+Análisis exploratorio de datos Revisión de métricas como usuarios activos diarios (DAU) y Usuarios que cancelan, duración de sesiones y frecuencia de retorno.
+creación de clusteres: Realización de clusteres para una solución a base de grupos similares..</p>
 
         <h2>Tecnologías Utilizadas</h2>
         <ul>
-            <li>Python (Pandas, NumPy, Scikit-learn)</li>
-            <li>Tableau</li>
-            <li>SQL</li>
+            <li>Python (Pandas)</li>
+            <li>Matplotlip, seaborn</li>
+            <li>Regressor,scipy, clustering</li>
         </ul>
 
         <h2>Resultados</h2>
-        <p>[Presenta los resultados del proyecto.  Qué insights encontraste?  Qué conclusiones sacaste?  Muestra visualizaciones de datos si es posible].</p>
+        <p>Factores clave y estrategias integradas para reducir la taza de cancelación:
+Contratos cortos + baja frecuencia de visitas son la combinación más riesgosa.
+Se puede prioritizar la siguiente solución: contratos largos (ejemplo: 12 meses con 1 mes gratis ofrecer hasta 4) y crear programas de engagement basados en metas (ejemplo: "20 clases/mes = descuento en renovación").
+Para los clientes nuevos: Se puede dar un mes de coaching personalizado para evitar el abandono temprano y agarren un gusto por el gimnasio.
+Para los clientes con mas tiempo pero con baja actividad: se puede fomentar una comunidad y que inviten a un amigo ciertos días, tambien descuentos exclusivos por lealtad.
+Utilización de modelos predictivos para identificar clientes en riesgo y activar ofertas justo a tiempo (ejemplo: "Renueva hoy y llévate 1 masaje").
+No ignoremos los servicios adicionales: ofrécer bonos de lealtad (ejemplo: "Por 6 meses de renovación, 1 consulta de nutriologo gratis").
+Se puede crear un programa de referidos con recompensas (ejemplo: "Trae un amigo: tú ganas 1 semana gratis, él obtiene 20% de descuento").
+Combinar intervenciones tempranas con estrategias de lealtad, usando los datos para personalizar incentivos. La clave está en actuar antes de que el cliente decida irse.</p>
 
-        <img src="../img/project1.png" alt="Visualización de Datos" width="500">  <!-- Ejemplo de visualización -->
+        <img src="img/gym/ Clustering.png" alt="Dendograma para diferenciación de clusteres" width="500">  <!-- Ejemplo de visualización -->
+
+        <img src="img/gym/diferenciacion clusters.png" alt="Clusteres y sus comportamientos " width="500">  <!-- Ejemplo de visualización -->
+
 
         <h2>Enlace al Código</h2>
-        <p><a href="[Enlace al repositorio de GitHub del proyecto]">Ver el código en GitHub</a></p>
+        <p><a href="https://github.com/Adriandiaz88/Usuarios_gym">Ver el código en GitHub</a></p>
 
         <h2>Volver al Portafolio</h2>
         <p><a href="../index.html">Volver a la página principal</a></p>
     </section>
 
     <footer>
-        <p>© 2023 [Tu Nombre]</p>
+        <p>© 2025 Adrián Díaz</p>
     </footer>
 </body>
 </html>
