@@ -4,7 +4,7 @@ Este es mi portafolio personal para mostrar mis habilidades y proyectos como ana
 
 ## Contenido
 
-*   **Página Principal:** [eadp.github.io]
+*   **Página Principal:** [adriandiaz88.github.io/My_Portfolio/]
 *   **Acerca de mí:** Profesional multidisciplinario con 15 años de experiencia en Producción Audiovisual y Comunicación Estratégica. Análista de Datos jr. Experto en coordinar proyectos integrales que abarcan comunicación interna, y estrategias digitales (redes sociales y marketing). Combinación única de habilidades creativas y técnicas, con dominio de herramientas audiovisuales y creciente especialización en análisis de datos (SQL, Excel, Power BI) e interpretación de métricas.
 *   **Habilidades:**
 *   Limpieza de datos  (manuales y automatizados).
