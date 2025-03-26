@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas A/B</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pruebas A/B en empresa internacional</h1>
+        <p>Análisis y Pruebas</p>
+    </header>
+
+    <section>
+        <h2>Descripción</h2>
+        <p>El objetivo de este proyecto Evaluaremos la efectividad de las pruebas A/B realizadas:
+Nombre de la prueba: recommender_system_test
+¿Hay diferencias significativas en el comportamiento de los usuarios entre los grupos de control (A)
+y tratamiento (B) en las pruebas?
+Analizaremos la influencia de campañas de marketing.
+Identificaremos si alguna campaña afecta los resultados de las pruebas A/B y actividad de los
+usuarios.
+Caracterizar a los usuarios participantes:
+Evaluar distribución de región, dispositivo utilizado y actividad para detectar posibles sesgos en la
+asignación de grupos.
+Haremos analisis y revisaremos si los valores nulos y si hay duplicados que puedan afectar la prueba.
+</p>
+
+        <h2>Metodología</h2>
+        <ul>
+        <li> Lectura de datos y carga de librerias.
+<li>Preprocesamiento de datos: Limpieza de datos (valores ausentes, duplicados, formatos de columnas, y tipos de datos adecuados).</li>
+<li>Análisis exploratorio de datos Estudiamos la conversión en las diferentes etapas del embudo ¿El número de eventos por usuario está distribuido equitativamente entre las muestras?</li>
+<li>Análisis de los Resultados de la Prueba A/B.</li>
+          </ul>
+
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+            <li>Python (Pandas), numpy</li>
+            <li>Matplotlip, seaborn</li>
+            <li>statsmodels,Plotly ,ztest, scipy</li>
+        </ul>
+
+        <h2>Resultados</h2>
+        <p>Análisis de los Resultados de la Prueba A/B</p>
+        <ul>
+<li>Hay un desbalanceo significativo en la distribución de eventos entre grupos</li>
+<li>El grupo A tiene más eventos por usuario que el grupo B lo que la muestra no es equilibrada.</li>
+<li>Las diferencias en la actividad de los usuarios invalidan la comparación directa, ya que no se está
+midiendo solo el efecto del tratamiento, sino también factores externos.</li>
+           </ul>
+       <p>Recomendaciones para próximas pruebas:</p>
+       <ul>
+<li>Controlar variables externas: Ejecutar pruebas en períodos sin campañas de marketing.</li>
+<li>Balancear grupos: Asegurar igual tamaño y distribución de características.</li>
+<li>Incluir un período de post-campaña para evitar contaminación.</li>
+<li>Re-ejecutar pruebas A/B en períodos sin campañas y con grupos balanceados..</li>
+
+                    </ul>
+
+        <img src="img/boxplot AB.png" alt="Boxplot diferencia usuarios A y B" width="500"/>  <!-- Ejemplo de visualización -->
+
+        <img src="img/eventos dias AB.png" alt="Diferencia usuarios A y B en uso de la pagina " width="500"/>  <!-- Ejemplo de visualización -->
+
+
+        <h2>Enlace al Código</h2>
+        <p><a href="https://github.com/Adriandiaz88/Pruebas-A-B">Ver el código en GitHub</a></p>
+
+        <h2>Volver al Portafolio</h2>
+        <p><a href="../index.html">Volver a la página principal</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Adrián Díaz</p>
+    </footer>
+</body>
+</html>
