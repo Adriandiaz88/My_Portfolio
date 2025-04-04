@@ -5,53 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retención usuarios gym</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Retención Usuarios Gym</h1>
-        <p>Analisis y clustering</p>
+    <header class="hero project-hero">
+        <div class="hero-content">
+            <h1>Retención Usuarios Gym</h1>
+            <p class="hero-subtitle">Análisis y Clustering</p>
+            <div class="project-links">
+                <a href="../index.html" class="project-link">
+                    <i class="fas fa-arrow-left"></i> Volver al Portafolio
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Descripción</h2>
-        <p>El objetivo de este proyecto es Retención de usuarios mediante el análisis de datos de visitas, cantidad de usuarios nuevos, usuarios viejos y usuarios que siguen en el sistema pero ya no visitan. El estudio busca comprender el comportamiento del usuario, identificar usuarios que ya no asisten al gimnasio * y generar ideas de como retener a los usuarios a través de sus acciones en el gym.</p>
+    <section class="project-details">
+        <div class="content-block">
+            <h2>Descripción</h2>
+            <p class="project-lead">El objetivo de este proyecto es mejorar la retención de usuarios mediante análisis de comportamiento y clustering, identificando patrones clave y desarrollando estrategias personalizadas.</p>
+        </div>
 
-        <h2>Metodología</h2>
-        <p> Lectura de datos y carga de librerias.
-- Preprocesamiento de datos: Limpieza de datos (valores ausentes, duplicados, formatos de columnas, y tipos de datos adecuados).
-- Análisis exploratorio de datos Revisión de métricas como usuarios activos diarios (DAU) y Usuarios que cancelan, duración de sesiones y frecuencia de retorno.
-- creación de clusteres: Realización de clusteres para una solución a base de grupos similares..</p>
-
-        <h2>Tecnologías Utilizadas</h2>
-        <ul>
-            <li>Python (Pandas)</li>
-            <li>Matplotlip, seaborn</li>
-            <li>Regressor,scipy, clustering</li>
-        </ul>
-
-        <h2>Resultados</h2>
-        <p>Factores clave y estrategias integradas para reducir la taza de cancelación:</p>
-        <ul>
-<li>Contratos cortos + baja frecuencia de visitas son la combinación más riesgosa.</li>
-<li>Se puede prioritizar la siguiente solución: contratos largos (ejemplo: 12 meses con 1 mes gratis ofrecer hasta 4) y crear programas de engagement basados en metas (ejemplo: "20 clases/mes = descuento en renovación").</li>
-<li>Para los clientes nuevos: Se puede dar un mes de coaching personalizado para evitar el abandono temprano y agarren un gusto por el gimnasio.</li>
-<li>Para los clientes con mas tiempo pero con baja actividad: se puede fomentar una comunidad y que inviten a un amigo ciertos días, tambien descuentos exclusivos por lealtad.</li>
-<li>Utilización de modelos predictivos para identificar clientes en riesgo y activar ofertas justo a tiempo (ejemplo: "Renueva hoy y llévate 1 masaje").</li>
-<li>No ignoremos los servicios adicionales: ofrécer bonos de lealtad (ejemplo: "Por 6 meses de renovación, 1 consulta de nutriologo gratis").</li>
-<li>Se puede crear un programa de referidos con recompensas (ejemplo: "Trae un amigo: tú ganas 1 semana gratis, él obtiene 20% de descuento").</li>
-<li>Combinar intervenciones tempranas con estrategias de lealtad, usando los datos para personalizar incentivos. La clave está en actuar antes de que el cliente decida irse.</li>
+        <div class="content-block">
+            <h2>Metodología</h2>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <i class="fas fa-shower"></i>
+                    <h3>Preprocesamiento</h3>
+                    <ul>
+                        <li>Limpieza de datos</li>
+                        <li>Manejo de valores nulos</li>
+                        <li>Feature engineering</li>
                     </ul>
+                </div>
+                <div class="methodology-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Análisis Exploratorio</h3>
+                    <ul>
+                        <li>DAU/MAU</li>
+                        <li>Frecuencia de visitas</li>
+                        <li>Duración de sesiones</li>
+                    </ul>
+                </div>
+                <div class="methodology-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Modelado</h3>
+                    <ul>
+                        <li>Clustering jerárquico</li>
+                        <li>Segmentación RFM</li>
+                        <li>Análisis de cohortes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <img src="img/Captura de pantalla 2025-03-25 115044.png" alt="Dendograma para diferenciación de clusteres" width="500"/>  <!-- Ejemplo de visualización -->
+        <div class="content-block">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Pandas, Scikit-learn</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-chart-area"></i>
+                    <h3>Visualización</h3>
+                    <p>Matplotlib, Seaborn</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Clustering, SciPy</p>
+                </div>
+            </div>
+        </div>
 
-        <img src="img/Captura de pantalla 2025-03-25 115106.png" alt="Clusteres y sus comportamientos " width="500"/>  <!-- Ejemplo de visualización -->
+        <div class="content-block">
+            <h2>Resultados Clave</h2>
+            <div class="results-grid">
+                <div class="result-card strategy-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Grupo de Riesgo</h3>
+                    <p>Contratos cortos + baja frecuencia = mayor riesgo de cancelación</p>
+                </div>
+                <div class="result-card strategy-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Programas de Engagement</h3>
+                    <p>Sistema de metas con recompensas y coaching personalizado</p>
+                </div>
+                <div class="result-card strategy-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad</h3>
+                    <p>Programas de referidos y eventos sociales para aumentar retención</p>
+                </div>
+                <div class="result-card strategy-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Modelos Predictivos</h3>
+                    <p>Detección temprana de usuarios en riesgo</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="content-block">
+            <h2>Visualizaciones</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="img/Captura de pantalla 2025-03-25 115044.png" alt="Dendograma para diferenciación de clusteres" class="project-image">
+                    <p>Análisis de clustering jerárquico</p>
+                </div>
+                <div class="image-card">
+                    <img src="img/Captura de pantalla 2025-03-25 115106.png" alt="Clusteres y sus comportamientos" class="project-image">
+                    <p>Segmentación de usuarios por comportamiento</p>
+                </div>
+            </div>
+        </div>
 
-        <h2>Enlace al Código</h2>
-        <p><a href="https://github.com/Adriandiaz88/Usuarios_gym">Ver el código en GitHub</a></p>
-
-        <h2>Volver al Portafolio</h2>
-        <p><a href="../index.html">Volver a la página principal</a></p>
+        <div class="content-block links-block">
+            <a href="https://github.com/Adriandiaz88/Usuarios_gym" class="project-link">
+                <i class="fab fa-github"></i> Ver código completo en GitHub
+            </a>
+            <a href="../index.html" class="project-link">
+                <i class="fas fa-home"></i> Volver al Portafolio
+            </a>
+        </div>
     </section>
 
     <footer>
