@@ -5,70 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas A/B</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Pruebas A/B en empresa internacional</h1>
-        <p>Análisis y Pruebas</p>
+    <header class="hero project-hero">
+        <div class="hero-content">
+            <h1>Pruebas A/B en empresa internacional</h1>
+            <p class="hero-subtitle">Análisis y Pruebas</p>
+            <div class="project-links">
+                <a href="../index.html" class="project-link">
+                    <i class="fas fa-arrow-left"></i> Volver al Portafolio
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Descripción</h2>
-        <p>El objetivo de este proyecto Evaluaremos la efectividad de las pruebas A/B realizadas:
-Nombre de la prueba: recommender_system_test
-¿Hay diferencias significativas en el comportamiento de los usuarios entre los grupos de control (A)
-y tratamiento (B) en las pruebas?
-Analizaremos la influencia de campañas de marketing.
-Identificaremos si alguna campaña afecta los resultados de las pruebas A/B y actividad de los
-usuarios.
-Caracterizar a los usuarios participantes:
-Evaluar distribución de región, dispositivo utilizado y actividad para detectar posibles sesgos en la
-asignación de grupos.
-Haremos analisis y revisaremos si los valores nulos y si hay duplicados que puedan afectar la prueba.
-</p>
+    <section class="project-details">
+        <div class="content-block">
+            <h2>Descripción</h2>
+            <p>El objetivo de este proyecto fue evaluar la efectividad de las pruebas A/B realizadas:<br>
+            <strong>Nombre de la prueba:</strong> recommender_system_test<br>
+            <strong>Hipótesis:</strong> ¿Hay diferencias significativas en el comportamiento de los usuarios entre los grupos de control (A) y tratamiento (B)?</p>
+        </div>
 
-        <h2>Metodología</h2>
-        <ul>
-        <li> Lectura de datos y carga de librerias.
-<li>Preprocesamiento de datos: Limpieza de datos (valores ausentes, duplicados, formatos de columnas, y tipos de datos adecuados).</li>
-<li>Análisis exploratorio de datos Estudiamos la conversión en las diferentes etapas del embudo ¿El número de eventos por usuario está distribuido equitativamente entre las muestras?</li>
-<li>Análisis de los Resultados de la Prueba A/B.</li>
-          </ul>
-
-        <h2>Tecnologías Utilizadas</h2>
-        <ul>
-            <li>Python (Pandas), numpy</li>
-            <li>Matplotlip, seaborn</li>
-            <li>statsmodels,Plotly ,ztest, scipy</li>
-        </ul>
-
-        <h2>Resultados</h2>
-        <p>Análisis de los Resultados de la Prueba A/B</p>
-        <ul>
-<li>Hay un desbalanceo significativo en la distribución de eventos entre grupos</li>
-<li>El grupo A tiene más eventos por usuario que el grupo B lo que la muestra no es equilibrada.</li>
-<li>Las diferencias en la actividad de los usuarios invalidan la comparación directa, ya que no se está
-midiendo solo el efecto del tratamiento, sino también factores externos.</li>
-           </ul>
-       <p>Recomendaciones para próximas pruebas:</p>
-       <ul>
-<li>Controlar variables externas: Ejecutar pruebas en períodos sin campañas de marketing.</li>
-<li>Balancear grupos: Asegurar igual tamaño y distribución de características.</li>
-<li>Incluir un período de post-campaña para evitar contaminación.</li>
-<li>Re-ejecutar pruebas A/B en períodos sin campañas y con grupos balanceados..</li>
-
+        <div class="content-block">
+            <h2>Metodología</h2>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Preprocesamiento</h3>
+                    <ul>
+                        <li>Limpieza de datos</li>
+                        <li>Manejo de valores nulos</li>
+                        <li>Detección de duplicados</li>
                     </ul>
+                </div>
+                <div class="methodology-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Análisis Exploratorio</h3>
+                    <ul>
+                        <li>Distribución de conversiones</li>
+                        <li>Balance entre grupos</li>
+                        <li>Análisis de eventos</li>
+                    </ul>
+                </div>
+                <div class="methodology-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Pruebas Estadísticas</h3>
+                    <ul>
+                        <li>Test Z para proporciones</li>
+                        <li>Análisis de significancia</li>
+                        <li>Intervalos de confianza</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <img src="img/boxplot AB.png" alt="Boxplot diferencia usuarios A y B" width="300"/>  <!-- Ejemplo de visualización -->
+        <div class="content-block">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Pandas, NumPy, SciPy</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Visualización</h3>
+                    <p>Matplotlib, Seaborn, Plotly</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Estadística</h3>
+                    <p>statsmodels, Hypothesis Testing</p>
+                </div>
+            </div>
+        </div>
 
-        <img src="img/eventos dias AB.png" alt="Diferencia usuarios A y B en uso de la pagina " width="300"/>  <!-- Ejemplo de visualización -->
+        <div class="content-block">
+            <h2>Resultados Clave</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3><i class="fas fa-balance-scale"></i> Desbalanceo Grupal</h3>
+                    <p>El grupo A mostró mayor actividad que el grupo B, afectando la validez de la prueba</p>
+                </div>
+                <div class="result-card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Factores Externos</h3>
+                    <p>Campañas de marketing influyeron en los resultados</p>
+                </div>
+                <div class="result-card">
+                    <h3><i class="fas fa-lightbulb"></i> Recomendaciones</h3>
+                    <ul>
+                        <li>Control de variables externas</li>
+                        <li>Balanceo de grupos</li>
+                        <li>Nuevas pruebas controladas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div class="content-block">
+            <h2>Visualizaciones</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="img/boxplot AB.png" alt="Boxplot diferencia usuarios A y B" class="project-image">
+                    <p>Distribución de eventos entre grupos</p>
+                </div>
+                <div class="image-card">
+                    <img src="img/eventos dias AB.png" alt="Diferencia usuarios A y B en uso de la pagina" class="project-image">
+                    <p>Actividad diaria por grupo</p>
+                </div>
+            </div>
+        </div>
 
-        <h2>Enlace al Código</h2>
-        <p><a href="https://github.com/Adriandiaz88/Pruebas-A-B">Ver el código en GitHub</a></p>
-
-        <h2>Volver al Portafolio</h2>
-        <p><a href="../index.html">Volver a la página principal</a></p>
+        <div class="content-block links-block">
+            <a href="https://github.com/Adriandiaz88/Pruebas-A-B" class="project-link">
+                <i class="fab fa-github"></i> Ver código completo en GitHub
+            </a>
+            <a href="../index.html" class="project-link">
+                <i class="fas fa-home"></i> Volver al Portafolio
+            </a>
+        </div>
     </section>
 
     <footer>
