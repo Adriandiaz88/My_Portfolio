@@ -221,3 +221,82 @@ button:hover {
         padding: 2rem 1rem;
     }
 }
+
+/* Página de proyecto específica */
+.project-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a4b6d 100%);
+}
+
+.project-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-block {
+    margin-bottom: 4rem;
+}
+
+.methodology-grid,
+.tech-grid,
+.results-grid,
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.methodology-card,
+.tech-card,
+.result-card,
+.image-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.methodology-card:hover,
+.tech-card:hover,
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.links-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.image-card img {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.image-card p {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--dark-text);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        padding: 1rem;
+    }
+    
+    .methodology-grid,
+    .tech-grid,
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
